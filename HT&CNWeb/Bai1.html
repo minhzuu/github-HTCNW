@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px auto;
+            padding: 0px;
+        }
+        .wrapper{
+            height: 800px;
+            width: 1089px;
+            background-color: antiquewhite;
+            border: 1px solid  royalblue;
+        }
+        .header{    
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(230,129,205);
+            border: 1px solid  royalblue;
+            position: relative;
+        }
+        .header .p1{    
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            color: seashell;
+            font-size: 35px;
+        }
+        .header .p2{
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            color: seashell;
+            font-size: 30px;
+            text-shadow: rgb(181,212,130) 10px 10px 5px;
+        }
+        .header:hover>.p1{
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .nav{
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(136,133,130);
+            border-bottom: 1px solid royalblue;
+        }
+        .menu li{
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background-color: thistle;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        li a{
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .menu li:hover  {
+            background-color: turquoise;
+        }
+        li:hover>a{
+            font-style: italic;
+        }
+        .menu li .sub-menu{
+            position: absolute;
+            display: none;
+        }
+        .menu li:hover .sub-menu{
+            display: block;
+        }
+        .menu li .sub-menu li .sub-menu{
+            display: none;
+        }
+        .menu li .sub-menu li:hover>.sub-menu{
+            display: block;
+            top: 0px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100064618128798&tbnid=5RF-3jC-n7g1yM&vet=12ahUKEwiR9Zuty8WEAxVYWvUHHcF5C8UQMygBegQIARBU..i&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FIPE.IUH%2F&docid=_dVNaZUoL6oLPM&w=560&h=560&q=iuh&ved=2ahUKEwiR9Zuty8WEAxVYWvUHHcF5C8UQMygBegQIARBU" alt="" srcset="" height="150p" width="1089"   >
+            <p class="p1">KHOA CNTT</p> 
+            <p class="p2">Trung tam tin hoc</p>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">MOBI</a></li>
+                        <li><a href="#">VINA</a></li>
+                        <li><a href="#">VIETTEL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="aside">3</div>
+            <div class="section">4</div>
+        </div>
+        <div class="footer">5</div>
+    </div>
+</body>
+</html>
